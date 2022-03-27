@@ -1,0 +1,211 @@
+body {
+  font-family: 'Roboto', sans-serif;
+  color: #212121;
+}
+
+li {
+  list-style: none;
+}
+
+/* <!-- Header markup--> */
+
+.header-container {
+  height: 80px;
+  background: #ffffff;
+  display: flex;
+}
+
+a,
+a:visited {
+  text-decoration: none;
+  color: #212121;
+}
+
+.logo {
+  font-family: 'Raleway', sans-serif;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 0.81em;
+  color: #ffffff;
+}
+
+.logo-accent {
+  color: #2196f3;
+}
+
+.links-item:hover,
+.contacts-link:hover,
+.links-item:focus,
+.contacts-link:focus {
+  color: #2196f3;
+}
+
+.links,
+.contacts {
+  display: flex;
+  list-style-type: none;
+}
+
+.links-item {
+  margin: 46px;
+}
+
+.contacts-link {
+  margin: 50px;
+}
+
+/* <!-- Service homepage markup--> */
+
+.service {
+  height: 600px;
+  background: #2f303a;
+}
+
+.service-title {
+  font-weight: 900;
+  font-size: 44px;
+  text-transform: uppercase;
+  text-align: center;
+  letter-spacing: 0.06em;
+  color: #ffffff;
+}
+
+.service-button {
+  width: 200px;
+  height: 50px;
+  background: #2196f3;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+}
+
+/* <!-- About us homepage markup--> */
+
+.aboutus-text-title {
+  text-transform: uppercase;
+}
+
+.aboutus-text {
+  font-size: 14px;
+  color: #757575;
+}
+
+.aboutus-title {
+  font-weight: 700;
+  font-size: 36px;
+  text-align: center;
+}
+
+.aboutus-list {
+  list-style-type: none;
+  display: flex;
+  justify-content: center;
+}
+
+.aboutus-item {
+  margin: 30px;
+}
+
+/* <!-- Team homepage markup--> */
+
+.team {
+  height: 648px;
+  background: #f5f4fa;
+}
+
+.team-title {
+  font-weight: 700;
+  font-size: 36px;
+  text-align: center;
+}
+
+.team-list {
+  display: flex;
+  justify-content: center;
+}
+
+.team-item {
+  margin: 30px;
+  background: #ffffff;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
+}
+
+.team-person {
+  height: 108px;
+  width: 270px;
+}
+
+.team-person-name {
+  text-align: center;
+}
+
+.team-person-position {
+  text-align: center;
+  color: #757575;
+}
+
+/* <!-- Footer markup--> */
+
+footer {
+  height: 252px;
+  background: #2f303a;
+}
+
+.footer-logo,
+.address-item {
+  color: #ffffff;
+}
+
+.address-list {
+  font-style: normal;
+}
+
+.address-item {
+  line-height: 1.71em;
+}
+
+.address-item > [href^='mailto'] {
+  text-decoration-line: underline;
+}
+
+.address-contact {
+  color: rgba(255, 255, 255, 0.6);
+}
+
+/* <!-- Portfolio site markup--> */
+
+.portfolio-menu {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.button-menu {
+  margin: 8px;
+  background: #f5f4fa;
+  border-radius: 4px;
+  border: none;
+}
+
+.button-menu:hover,
+.button-menu:focus {
+  background: #2196f3;
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
+  color: #ffffff;
+}
+
+.portfolio-list {
+  justify-items: center;
+  display: grid;
+  gap: 1px;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.portfolio-item {
+  display: inline-block;
+  border: 1px solid #eeeeee;
+  box-sizing: border-box;
+  margin: 15px;
+}
