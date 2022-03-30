@@ -1,24 +1,38 @@
+:root {
+  --black: #000000;
+  --blue: #2196f3;
+  --white: #ffffff;
+  --rock: #2f303a;
+  --silver: #757575;
+  --ghost: #f5f4fa;
+  --shade: #eeeeee;
+}
+
 body {
   font-family: 'Roboto', sans-serif;
-  color: #212121;
+  color: var(--black);
 }
 
 li {
   list-style: none;
 }
 
+button[type='button'] {
+  cursor: pointer;
+}
+
 /* <!-- Header markup--> */
 
 .header-container {
   height: 80px;
-  background: #ffffff;
+  background: var(--white);
   display: flex;
 }
 
 a,
 a:visited {
   text-decoration: none;
-  color: #212121;
+  color: var(--black);
 }
 
 .logo {
@@ -26,18 +40,20 @@ a:visited {
   font-weight: 700;
   font-size: 26px;
   line-height: 0.81em;
-  color: #ffffff;
+  color: var(--white);
 }
 
 .logo-accent {
-  color: #2196f3;
+  color: var(--blue);
 }
 
 .links-item:hover,
 .contacts-link:hover,
 .links-item:focus,
-.contacts-link:focus {
-  color: #2196f3;
+.contacts-link:focus,
+.address-contact:hover,
+.address-contact:focus {
+  color: var(--blue);
 }
 
 .links,
@@ -58,7 +74,7 @@ a:visited {
 
 .service {
   height: 600px;
-  background: #2f303a;
+  background: var(--rock);
 }
 
 .service-title {
@@ -67,13 +83,13 @@ a:visited {
   text-transform: uppercase;
   text-align: center;
   letter-spacing: 0.06em;
-  color: #ffffff;
+  color: var(--white);
 }
 
 .service-button {
   width: 200px;
   height: 50px;
-  background: #2196f3;
+  background: var(--blue);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
 }
@@ -86,7 +102,7 @@ a:visited {
 
 .aboutus-text {
   font-size: 14px;
-  color: #757575;
+  color: var(--silver);
 }
 
 .aboutus-title {
@@ -109,7 +125,7 @@ a:visited {
 
 .team {
   height: 648px;
-  background: #f5f4fa;
+  background: var(--ghost);
 }
 
 .team-title {
@@ -125,7 +141,7 @@ a:visited {
 
 .team-item {
   margin: 30px;
-  background: #ffffff;
+  background: var(--white);
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
@@ -142,19 +158,19 @@ a:visited {
 
 .team-person-position {
   text-align: center;
-  color: #757575;
+  color: var(--silver);
 }
 
 /* <!-- Footer markup--> */
 
 footer {
   height: 252px;
-  background: #2f303a;
+  background: var(--rock);
 }
 
 .footer-logo,
 .address-item {
-  color: #ffffff;
+  color: var(--white);
 }
 
 .address-list {
@@ -183,17 +199,17 @@ footer {
 
 .button-menu {
   margin: 8px;
-  background: #f5f4fa;
+  background: var(--ghost);
   border-radius: 4px;
   border: none;
 }
 
 .button-menu:hover,
 .button-menu:focus {
-  background: #2196f3;
+  background: var(--blue);
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
     0px 2px 2px rgba(0, 0, 0, 0.12);
-  color: #ffffff;
+  color: var(--white);
 }
 
 .portfolio-list {
@@ -205,7 +221,7 @@ footer {
 
 .portfolio-item {
   display: inline-block;
-  border: 1px solid #eeeeee;
+  border: 1px solid var(--shade);
   box-sizing: border-box;
   margin: 15px;
 }
